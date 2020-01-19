@@ -1,0 +1,17 @@
+{
+  "name": "project-euler-100",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kofosu2289/project-euler-100.git",
+  "author": "Kenneth Ofosu <kofosu89@gmail.com>",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
