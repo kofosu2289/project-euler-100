@@ -5,7 +5,7 @@
   "repository": "https://github.com/kofosu2289/project-euler-100.git",
   "author": "Kenneth Ofosu <kofosu89@gmail.com>",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "license": "MIT",
   "devDependencies": {

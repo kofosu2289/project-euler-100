@@ -1,5 +1,5 @@
 import { multiplesOf3and5 } from './001-multiples-of-3-and-5';
-import expectExport from 'expect';
+
 
 test('multiplesOf3and5(1000) should return 233168', () => {
   expect(multiplesOf3and5(1000)).toBe(233168);
