@@ -14,6 +14,30 @@ const findAllFactors = (number) => {
   return factors;
 }
 
+const findAllFactorPairs = number => {
+  let factors = [], i;
+  let freq = {};
+  for (i = 1; i <= Math.floor(Math.sqrt(number)); i++) {
+    if (number % i === 0) {
+      let pushed = [i, number / i].sort((x, y) => x - y)
+      factors.push(pushed);
+      if (!freq[pushed[0]]) {
+        freq[pushed[0]] = pushed[1]
+      }
+      if (number / i !== i) {
+        let pushed = [number / i, number / (number / i)].sort((x, y) => x - y)
+        factors.push(pushed);
+        if (!freq[pushed[0]]) {
+          freq[pushed[0]] = pushed[1]
+        }
+      }
+    }
+    // factors.sort((x, y) => { return x - y; }); 
+  }
+  console.log(freq)
+  return factors;
+}
+
 //determine if a number is prime
 const isPrime = number => {
   for (let i = 2, s = Math.sqrt(number); i <= s; i++) {
